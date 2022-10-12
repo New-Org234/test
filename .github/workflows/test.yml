@@ -1,7 +1,9 @@
 name: Test
 on:
   workflow_dispatch:
- 
+  schedule:
+    - cron: '*/5 * * * *'
+
 jobs: 
   Test:
     runs-on: ubuntu-latest
